@@ -1,0 +1,55 @@
+@import "../../styles/variables/colors.module";
+@import "../../styles/variables/mixins.module";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  height: 320px;
+  margin-top: clamp(300px, 7vw, 110px);
+  margin-inline: auto;
+  .subtitleWrapper {
+    width: clamp(100%, 3vw, 80%);
+    .subtitleText {
+      font-weight: 500;
+      font-size: clamp(15px, 2vw, 34px);
+      color: $textColor;
+      line-height: clamp(10px, 3vw, 60px);
+      letter-spacing: -0.02em;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .left {
+      margin-left: 50px;
+    }
+    .right {
+      float: right;
+    }
+  }
+  .textWrapper {
+    width: 100%;
+    margin-top: 30px;
+    @include flex(center, center);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    height: auto;
+    .subtitleWrapper {
+      .subtitleText {
+        white-space: wrap;
+      }
+      .left,
+      .right {
+        width: 104px;
+      }
+    }
+    .textWrapper {
+      width: 100%;
+      margin-top: 30px;
+      @include flex(center, center);
+    }
+  }
+}

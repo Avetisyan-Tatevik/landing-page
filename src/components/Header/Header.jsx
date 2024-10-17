@@ -5,6 +5,7 @@ import NavBar from "./NavBar/NavBar";
 import { MenuIcon } from "../../shared/MenuIcon/MenuIcon";
 import useIsMobile from "../../customHooks/useIsMobile";
 import RequestDemoBtn from "../../shared/RequestDemoBtn/RequestDemoBtn";
+
 import style from "./header.module.scss";
 
 const Header = () => {
@@ -21,7 +22,7 @@ const Header = () => {
     }
   }, [isMobile]);
   return (
-    <header>
+    <header className={style.wrapper}>
       {!isMobile && (
         <section className={style.headerWrapper}>
           <Logo />
