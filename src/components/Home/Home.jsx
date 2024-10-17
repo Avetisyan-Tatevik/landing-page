@@ -1,7 +1,9 @@
 import Header from "../Header/Header";
-import ClientRetentionSection from "../ClientRetentionSection/ClientRetentionSection";
-import TradingBull from "../../assets/Trading Bull_Landing Page (1).jpg";
 import IpadScreen from "../../Svgs/IpadScreen";
+import BookDemoBtn from "../../shared/BookDemoBtn/BookDemoBtn";
+import TradingBull from "../../assets/Trading Bull_Landing Page (1).jpg";
+import ClientRetentionSection from "../ClientRetentionSection/ClientRetentionSection";
+import AttractNewBusinessSection from "../AttractNewBusinessSection/AttractNewBusinessSection";
 
 import style from "./home.module.scss";
 
@@ -10,12 +12,14 @@ const Home = () => {
     <div className={style.mainWrapper}>
       <Header />
       <section className={style.background}>
-        <img src={TradingBull} alt="Trading Bull" />
+        <img src={TradingBull} alt="Trading Bull" className={style.bgImage} />
         <div className={style.absolute}>
           <ClientRetentionSection />
-          <IpadScreen  className={style.ipadScreen}/>
+          <IpadScreen className={style.ipadScreen} />
+          <BookDemoBtn />
         </div>
       </section>
+      <AttractNewBusinessSection />
     </div>
   );
 };

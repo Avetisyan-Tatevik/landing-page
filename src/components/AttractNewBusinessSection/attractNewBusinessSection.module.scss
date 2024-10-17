@@ -1,0 +1,24 @@
+@import "../../styles/variables/mixins.module";
+
+.wrapper {
+  width: 100%;
+  border: 2px solid red;
+  position: relative;
+
+  @include flexColumn(center, center);
+  .blackBgImage {
+    position: relative;
+  }
+  .subTitle {
+    width: 809px;
+    height: 172px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 54px;
+    letter-spacing: -0.02em;
+    line-height: 86px;
+    position: absolute;
+    top: 2%;
+    @include flex(center, center);
+  }
+}

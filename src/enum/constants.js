@@ -9,6 +9,7 @@ export const NAV_TYPES = {
 export const SUBTITLES = {
   CLIENT_RETENTION1: "Improve Client Retention Fast with ",
   CLIENT_RETENTION2: "Our Cutting-Edge Research Terminal",
+  ATTRACT_NEW_BUSINESS: "How to reduce churn and attract new business",
 };
 
 export const TEXT = {
