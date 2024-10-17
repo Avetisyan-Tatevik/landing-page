@@ -1,0 +1,47 @@
+@import "../../../styles/variables/mixins.module";
+@import "../../../styles/variables/colors.module";
+
+.navbar {
+  width: 56%;
+  height: 50px;
+  border-radius: 37px;
+  @include flex(center, center);
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 0.13);
+
+  .ulList {
+    list-style: none;
+    @include flex(space-evenly, center);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 37px;
+    display: flex;
+    flex-direction: column;
+    .ulList {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      height: auto;
+
+      gap: 10px;
+      padding: 8px 0;
+
+      li a {
+        text-decoration: none;
+        color: $textColor;
+        font-size: 16px;
+        opacity: 100%;
+        margin-left: 50px;
+      }
+    }
+  }
+}

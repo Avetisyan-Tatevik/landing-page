@@ -1,0 +1,8 @@
+@import "../../styles/variables/font.module";
+@import "../../styles/variables/colors.module";
+
+.mainWrapper {
+  width: $fullScreen;
+  height: auto;
+  background-color: $mainBackgroundColor;
+}

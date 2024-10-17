@@ -1,0 +1,16 @@
+@import "../../styles/variables/mixins.module";
+@import "../../styles/variables/colors.module";
+
+.headerWrapper {
+  width: 82%;
+  height: 50px;
+  @include flex(space-between, center);
+  border: 1px solid $mainBackgroundColor;
+  margin-inline: auto;
+  margin-top: 42px;
+}
+@media screen and (max-width: 768px) {
+  .headerWrapper {
+    height: auto;
+  }
+}

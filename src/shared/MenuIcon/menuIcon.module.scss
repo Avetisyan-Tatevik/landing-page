@@ -1,0 +1,51 @@
+@import "../../styles/variables/colors.module";
+
+.menuButton {
+  background-color: transparent;
+  border: none;
+  padding-right: 40px;
+  width: 48px;
+  height: 48px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.menuIcon,
+.menuIcon::before,
+.menuIcon::after {
+  background-color: $textColor;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: "";
+  color: $textColor;
+}
+
+.menuIcon::before {
+  transform: translate(-20px, -12px);
+}
+
+.menuIcon::after {
+  transform: translate(-20px, 12px);
+}
+.open {
+  background-color: transparent;
+}
+.open::before {
+  transform: rotate(45deg) translate(-15px, 15px);
+}
+
+.open::after {
+  transform: rotate(-45deg) translate(-15px, -15px);
+}

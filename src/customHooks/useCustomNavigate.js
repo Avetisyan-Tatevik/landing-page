@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const useCustomNavigate = () => {
   const navigate = useNavigate();
 
-  const navigateTo = (path: string) => {
+  const navigateTo = (path) => {
     navigate(path);
   };
 

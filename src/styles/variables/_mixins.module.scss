@@ -14,12 +14,10 @@
   width: $width;
   height: $height;
   font-size: 18px;
-  background-color: $blue-btn-color;
-  color: $white-text-color;
+  background-color: transparent;
   border: none;
   border-radius: 30px;
   &:hover {
-    background-color: $blue-btn-hover-color;
     cursor: pointer;
   }
 }

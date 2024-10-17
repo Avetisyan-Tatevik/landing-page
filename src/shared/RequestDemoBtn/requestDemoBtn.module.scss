@@ -1,0 +1,30 @@
+@import "../../styles/variables/colors.module";
+
+.requestDemoBtnWrapper {
+  width: 208px;
+  height: 50px;
+
+  border-radius: 37px;
+  background-image: linear-gradient(
+    131.15deg,
+    #91ff8a 6.39%,
+    rgba(134, 244, 199, 0) 50.03%,
+    #40ffff 94.11%
+  );
+  border-image-slice: 1;
+ 
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    border: none;
+    border: 1px solid transparent;
+    background-color: $mainBackgroundColor;
+    color: #ffffff;
+    width: 205px;
+    height: 47px;
+    border-radius: 37px;
+    
+  }
+}

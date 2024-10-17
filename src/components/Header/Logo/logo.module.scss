@@ -1,0 +1,11 @@
+@import "../../../styles/variables/mixins.module";
+
+.logoWrapper {
+  width: 234px;
+  height: 46px;
+  @include flex(space-between, center);
+  .subtitleText {
+    width: 155px;
+    margin-inline: 8%;
+  }
+}
